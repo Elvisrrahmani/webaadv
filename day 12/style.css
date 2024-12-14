@@ -1,0 +1,28 @@
+
+h1{color: aqua;
+letter-spacing: 20px;
+ word-spacing: 40px;}
+ p{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 1000px;                
+text-align: center;
+ font-size: 40px;                  }
+h2{text-decoration: overline;
+ color: blue;              } 
+h3{text-decoration: line-through;
+       color: chartreuse;} 
+h4{text-decoration: underline;
+           color: aquamarine;} 
+ body{background-color:rgb(16, 116, 119);}
+ .p1{color: crimson;
+    text-align: left;
+       background-color: darkblue;}         
+ #p2{font-style: normal;
+font-weight: normal;} 
+ #p3{font-style: italic;
+font-weight: bold;} 
+ #p4{font-style: oblique;
+font-weight: 900;}    
+a:link{color: crimson;} 
+a:visited{color: chartreuse;} 
+a:hover{color: red;}
+a:active{color: royalblue;}                  
