@@ -1,0 +1,39 @@
+body {
+    background: linear linear-gradient(to left, red, blue)  
+  }
+   
+/*  1. descended combinator(space)-select elements insade other elements(like a parent and a child)*/
+  article p {            
+    background: purple;
+    color: aquamarine;
+    padding: 20px;
+  }
+ /* 2.child combinator(>) -selects direct children inside a element*/
+article > p{      
+background: gold;
+}
+/* 3. genral sibling combinator (~)-selects all siblings after an element*/
+ article ~ p{background: palevioletred
+    ;color: olive;
+padding: 20px;} 
+/*4.adjecent sibling combinator (+) -selects the next sibling after an element*/
+article + p{background: green;}
+/*:first-child- pseodo class we use it when we want style the first element*/
+ h1:first-child{  
+background-color: coral;
+color: blue;
+padding: 20px;
+ } 
+ input{ width: 50px;}
+ input:in-range{border: 3px solid green;}
+ input:out-of-range{border: 3px solid red}
+ input:required{background-color: aqua;}
+ input:focus{background-color: yellow;}
+ input[name="name"]:valid{border: 5px solid green;}
+ input[name="name"]:invalid{border: 5px solid red;}
+ #p1::first-line{background: white;
+color: blue;
+font-size: 40px;}
+::selection{color: black;
+background: beige;}
+div{opacity: 0.5;}
