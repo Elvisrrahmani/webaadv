@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(to left, red, blue);
+  }
+  div#static{
+position: static;
+border: 2px solid blue;
+width: 250px;
+height: 250px;
+padding: 20px;
+  }
+  div#relative{
+position: relative;
+border: 2px solid blue;
+width: 250px;
+height: 250px;
+padding: 20px;
+left: 200px;
+top: 20px;
+  }
+  div#fixed{
+    position: fixed;
+    border: 2px solid blue;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    right: 200px;
+    top: 100px;   
+  }
+  div#parent{
+    position: relative;
+    border: 2px solid blue;
+    width: 250px;
+    height: 250px;
+    top: 100px;
+  }
+  div#absolute{
+position: absolute;
+width: 100px;
+height: 100px;
+background-color: #00014e;
+right: 80px;
+top: 70px;
+color: white;
+  }
+  div#sticky{ 
+position: sticky;
+top: 0;
+background-color: #00014e;
+color: white;
+padding: 20px;
+  }
