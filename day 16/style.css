@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(to left, red, blue);
+  }
+  div.gallery{
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    width: 180px;
+  }
+  div.gallery :hover{
+    border: 1px solid lightpink;
+  }
+  div.gallery img{
+    width: 100%;
+    height: auto;
+  }
+  div.desc{
+    padding: 15px;
+    text-align: center;
+}
+.sprite{
+    background:url("images/image.png") no-repeat;
+}
+.city1{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position:0  0;
+}
+.city2{width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: -500px 0;
+}
