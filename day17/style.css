@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(to left, red, blue);
+  }
+a[href="https://shkolladigjitale.com/"] {
+color: brown;
+}
+p[class*="ds"]{
+    background: blue;
+    color: aqua;
+    padding: 20px;
+}
+div[id~="ds"] {
+background: gold;
+padding: 20px;
+color: blueviolet;
+}
+img[title^="blue"] {
+    border: 2px solid blue;
+}
+h1[class |=heading]{
+    background: purple;
+    color: white;
+    padding: 20px;
+}
+input[placeholder $="name"]{
+    border: 2px solid maroon;
+}
+input[readonly]{
+    border: 2px solid green;
+}
