@@ -1,0 +1,135 @@
+body {
+    background: linear-gradient(to left, blue, gold);
+  }
+.container{
+    display: flex;
+    border: 5px solid red;
+    background-color: lightblue;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.container div{
+    background-color: white;
+    border: 5px solid darkblue;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+    width: 100px;
+    height: 30px;
+}
+.container div:nth-child(1){
+    order: 2;
+}
+.container div:nth-child(2){
+    flex-grow: 2; 
+}
+.container div:nth-child(3){
+   flex-grow: 8;
+}
+.container div:nth-child(4){
+    order: 1;
+}
+.container2{
+    margin-top: 20px;
+    display: flex;
+    border: 5px solid orange;
+    background-color: lightblue;
+    flex-direction: column-reverse;
+
+}
+.container2 div{
+    background-color: white;
+    border: 5px solid gold;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+    width: 100px;
+    height: 30px;}
+    .container3{
+        margin-top: 20px;
+        display: flex;
+        border: 5px solid orangered;
+        background-color: blue;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .container3 div{
+        background-color: wheat;
+        border: 5px solid olivedrab;
+        margin: 10px;
+        padding: 20px;
+        font-size: 35px;
+        width: 100px;
+        height: 30px;}
+        .container4{
+            margin-top: 20px;
+            display: flex;
+            border: 5px solid green;
+            background-color: yellow;
+            flex-direction: row;
+            justify-content: flex-end;
+            height: 200px;
+        }
+        .container4 div{
+            background-color: saddlebrown;
+            border: 5px solid magenta;
+            margin: 10px;
+            padding: 20px;
+            font-size: 35px;
+         }
+            .container div:nth-child(2){
+                align-self: flex-end;
+            }
+            .container5{
+                margin-top: 20px;
+                display: flex;
+                border: 5px solid green;
+                background-color: yellow;
+                flex-direction: row;
+                justify-content: flex-end;
+                height: 200px;
+                
+            }
+            .container5 div{
+                background-color: saddlebrown;
+                border: 5px solid magenta;
+                margin: 10px;
+                padding: 20px;
+                font-size: 35px;
+                width: 100px;
+                height: 50px;}
+                .container div:nth-child(2){
+                    align-self: flex-end;
+                }
+                .container5 div:nth-child(1){
+                  height: 30px;  
+                }
+                .container5 div:nth-child(2){
+                   height: 70px;
+                }
+                .container5 div:nth-child(3){
+                   height: 100px;
+                }
+                .container5 div:nth-child(4){
+                   height: 130px;
+                }
+                .container6{
+                    margin-top: 20px;
+                    display: flex;
+                    border: 5px solid rgb(88, 4, 84);
+                    background-color: rgb(130, 206, 7);
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    height: 1800px;
+                    align-content: flex-start;
+                    flex-wrap: wrap;
+                    
+                }
+                .container6 div{
+                    background-color: rgb(79, 6, 138);
+                    border: 5px solid rgb(12, 100, 151);
+                    margin: 10px;
+                    padding: 20px;
+                    font-size: 35px;
+                    width: 400px;
+                    height: 520px;}
