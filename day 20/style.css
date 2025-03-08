@@ -47,20 +47,20 @@ nav ul li.active{
     border-radius: 5px;
     padding: 25px 85px;
 }
-#section-2{
-    background-color: green;
+#section2{
+    background-color: rgb(122, 41, 41);
     min-height: 745px;
-    color: white;
+    color: aliceblue;
 }
 .title-box{
     text-align: center;
-    max-width: 690px;
+    max-width: 609px;
     margin-left: auto;
-margin-right: auto;
+    margin-right: auto;
 }
 .title-box h2{
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     padding-top: 100px;
     font-size: 40px;
     text-transform: uppercase;
@@ -69,16 +69,16 @@ margin-right: auto;
 .title-box .line{
     width: 87px;
     height: 4px;
-    background-color: blanchedalmond;
+    background-color: blue;
     margin-left: auto;
     margin-right: auto;
 }
 .services-box{
     margin-top: 80px;
     display: flex;
-    margin-right: auto;
     margin-left: auto;
-    width:90% ;
+    margin-right: auto;
+    width: 90%;
     padding-bottom: 100px;
 }
 .service{
@@ -90,4 +90,77 @@ margin-right: auto;
 .service img{
     width: 200px;
 }
+#section-3{
+    background-color: chocolate;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: blue;
+}
+#contact-form{
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-row{
+    display: flex;
+}
+input[type="text"], input[type="email"]{
+    width: 46%;
+    height: 56px;
+}
+input[type="text"], input[type="email"], textarea{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: coral;
+    border: none;
+    font-size: 19px;
+    margin: 16px;
+    border-radius: 6px;
+    padding-left: 26px;
+}
+textarea{
+    height: 200px;
+    width: 100%;
+    padding-top: 24px;
+}
+input[type="submit"]{
+background-color: lightblue;
+border: none;
+font-size: 18px;
+text-transform: uppercase;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5px;
+margin-top: 60px;
+margin-bottom: 10px;
+}
+.big-button{
+    padding: 25px 85px;
+    color: white;
+}
+footer{
+    background-color: goldenrod;
+}
+.footer-links{
+    max-width: 945px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer ul{
+    margin: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+}
+.footer-links ul li {
+display: inline-block;
+padding: 10px 20px 10px 20px;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
 
