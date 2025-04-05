@@ -49,20 +49,22 @@ header {
     background-color: #333;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px 20px;
-    align-items: center;
-}
-
-.navbar a {
-    color: white;
-    padding: 14px 20px;
+.navbar{
+    float: right;
+    overflow: hidden;
+    background-color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    width: 1915px;
+} 
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: aliceblue;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.2rem;
-}
+} 
 
 .navbar a:hover {
     background-color: #ddd;

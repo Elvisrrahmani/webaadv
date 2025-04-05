@@ -23,18 +23,22 @@ a:hover {
 }
 
 /* Navbar Styles */
-.navbar {
-    background-color: #333;
+.navbar{
+    float: right;
     overflow: hidden;
-}
-
-.navbar a {
+    background-color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    width: 1915px;
+} 
+.navbar a{
     float: left;
-    display: block;
-    padding: 14px 16px;
-    color: white;
+    font-size: 16px;
+    color: aliceblue;
     text-align: center;
-}
+    padding: 14px 16px;
+    text-decoration: none;
+} 
 
 .navbar a:hover {
     background-color: #ddd;
