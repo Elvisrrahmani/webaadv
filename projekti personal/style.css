@@ -30,7 +30,7 @@
         background-color: navy;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding: 20px;
-        width: 515px;
+        width: auto;
     } 
     .navbar a{
         float: left;
