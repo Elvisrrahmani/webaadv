@@ -187,3 +187,42 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .filter-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .modal-content {
+        margin: 20% auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .apply-btn,
+    .submit-btn {
+        width: 100%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

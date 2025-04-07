@@ -99,4 +99,24 @@
     color: #333; /* Sets a dark gray color for the text */
   }
   
-  
+  /* 📱 Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .section.terms {
+    padding: 1rem;
+  }
+}
