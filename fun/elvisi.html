@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Button Example</title>
+    <style>
+        /* Reset default margin and padding */
+        body, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container to add spacing */
+        .container {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the email link */
+        .email-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+        }
+
+        /* Hover effect */
+        .email-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Focus state for accessibility */
+        .email-btn:focus {
+            outline: 2px solid #ffbf47;
+            outline-offset: 4px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .email-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <p>
+        For more information, 
+        <a href="mailto:info@luxdrive.com" class="email-btn" aria-label="Email LuxDrive">Email Us</a>
+        today!
+    </p>
+</div>
+
+</body>
+</html>
