@@ -12,7 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.5s;
+    transition: background 0.5s ease;
+    margin: 0;
   }
   
   .player {
@@ -22,8 +23,10 @@
     width: 380px;
     text-align: center;
     color: var(--text-color);
-    box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
     position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
   }
   
   .theme-toggle {
@@ -32,6 +35,11 @@
     right: 20px;
     cursor: pointer;
     font-size: 22px;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    transform: scale(1.1);
   }
   
   .details img {
@@ -41,16 +49,20 @@
     margin-bottom: 15px;
     object-fit: cover;
     animation: rotate 20s linear infinite paused;
+    transition: transform 0.5s ease;
   }
   
   .details h2 {
     margin: 10px 0 5px;
     font-size: 24px;
+    font-weight: 600;
+    transition: color 0.3s ease;
   }
   
   .details h3 {
     font-size: 16px;
     color: #aaa;
+    transition: color 0.3s ease;
   }
   
   .controls {
@@ -64,11 +76,12 @@
     margin: 0 10px;
     color: var(--text-color);
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
   
   .controls .btn:hover {
     transform: scale(1.3);
+    color: var(--highlight);
   }
   
   .progress-area {
@@ -76,6 +89,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 0;
+    transition: color 0.3s ease;
   }
   
   .progress-container {
@@ -86,6 +100,11 @@
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .progress-container:hover {
+    background: var(--highlight);
   }
   
   .progress {
@@ -101,6 +120,7 @@
   
   .volume-container input {
     width: 100%;
+    transition: background 0.3s ease;
   }
   
   .playlist {
@@ -115,12 +135,16 @@
     padding: 10px;
     cursor: pointer;
     border-bottom: 1px solid #555;
-    transition: background 0.3s;
+    transition: background 0.3s ease, color 0.3s ease;
   }
   
   .playlist .song:hover, .playlist .song.active {
     background: var(--highlight);
     color: #000;
+  }
+  
+  .playlist .song.active {
+    font-weight: 600;
   }
   
   /* Animation */
@@ -139,4 +163,38 @@
     --secondary-bg: #fff;
     --text-color: #333;
   }
+  
+  body.light .player {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  body.light .playlist .song {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  body.light .controls .btn:hover {
+    color: var(--highlight);
+  }
+  
+  /* Responsive */
+  @media (max-width: 450px) {
+    .player {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .details img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .controls .btn {
+      font-size: 22px;
+    }
+  
+    .playlist {
+      max-height: 120px;
+    }
+  }
+  
   
