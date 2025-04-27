@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Join Our Luxury Car Dealership Team</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">LuxDrive</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#inventory">Inventory</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="contact.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <header>
+        <div class="container">
+            <h1>Careers at Our Luxury Car Dealership</h1>
+            <p>Join us in offering premium automotive experiences. Explore our open positions and apply today!</p>
+        </div>
+    </header>
+
+    <section class="filters">
+        <div class="container">
+            <h2>Filter Open Positions</h2>
+            <div class="filter-options">
+                <label for="jobType">Department:</label>
+                <select id="jobType" name="jobType" onchange="filterJobs()">
+                    <option value="all">All</option>
+                    <option value="sales">Sales</option>
+                    <option value="service">Service</option>
+                    <option value="admin">Administration</option>
+                </select>
+                <label for="location">Location:</label>
+                <select id="location" name="location" onchange="filterJobs()">
+                    <option value="all">All</option>
+                    <option value="new-york">New York</option>
+                    <option value="los-angeles">Los Angeles</option>
+                    <option value="miami">Miami</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="job-listings" id="jobList">
+        <div class="container">
+            <h2>Open Positions</h2>
+            <div class="job" data-job-type="sales" data-location="new-york">
+                <h3>Luxury Car Sales Consultant</h3>
+                <p>Location: New York</p>
+                <p>Sales | Build relationships with customers and guide them to find the perfect luxury vehicle.</p>
+                <button class="apply-btn" onclick="openApplicationForm()">Apply Now</button>
+            </div>
+            <div class="job" data-job-type="service" data-location="los-angeles">
+                <h3>Automotive Service Technician</h3>
+                <p>Location: Los Angeles</p>
+                <p>Service | Perform vehicle diagnostics, repairs, and maintenance on luxury cars.</p>
+                <button class="apply-btn" onclick="openApplicationForm()">Apply Now</button>
+            </div>
+            <div class="job" data-job-type="admin" data-location="miami">
+                <h3>Administrative Assistant</h3>
+                <p>Location: Miami</p>
+                <p>Admin | Provide administrative support to ensure smooth dealership operations and customer service.</p>
+                <button class="apply-btn" onclick="openApplicationForm()">Apply Now</button>
+            </div>
+            <div class="job" data-job-type="sales" data-location="new-york">
+                <h3>Luxury Car Sales Manager</h3>
+                <p>Location: New York</p>
+                <p>Sales | Oversee the sales team, create strategies to drive sales, and deliver an exceptional customer experience.</p>
+                <button class="apply-btn" onclick="openApplicationForm()">Apply Now</button>
+            </div>
+            <div class="job" data-job-type="service" data-location="miami">
+                <h3>Luxury Car Detailer</h3>
+                <p>Location: Miami</p>
+                <p>Service | Ensure that each luxury vehicle is cleaned, polished, and maintained to perfection.</p>
+                <button class="apply-btn" onclick="openApplicationForm()">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-join">
+        <div class="container">
+            <h2>Why Join Our Dealership?</h2>
+            <p>We offer more than just a job—we offer a career with growth, competitive pay, and excellent benefits. Here's why you'll love working with us:</p>
+            <ul>
+                <li><strong>Exceptional Work Environment</strong> – Work with the best in the luxury car industry, surrounded by automotive enthusiasts.</li>
+                <li><strong>Employee Discounts</strong> – Enjoy discounts on luxury cars and services.</li>
+                <li><strong>Comprehensive Benefits</strong> – Health, dental, vision, and retirement benefits to support you and your family.</li>
+                <li><strong>Career Growth</strong> – Opportunities to advance and learn new skills in a high-end automotive setting.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeApplicationForm()">&times;</span>
+            <h2>Apply for a Job</h2>
+            <form id="applicationForm" onsubmit="submitForm(event)">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+                <label for="coverLetter">Cover Letter:</label>
+                <textarea id="coverLetter" name="coverLetter" required></textarea>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+          <p>© 2025 LuxDrive. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="about.html">Privacy Policy</a>
+            <a href="contact.html">Terms & Conditions</a>
+            <a href="index1.html">Careers</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+  }
+  
+  .logo {
+    font-size: 28px;
+    color: #e0b84c;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #e0b84c;
+  }
+  
+  /* Hero */
+  .hero {
+    background: url('https://images.unsplash.com/photo-1616594052486-fbd7a50fa889?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #e0b84c;
+    color: #000;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #c6a538;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 80px 50px;
+  }
+  
+  .section h2 {
+    text-align: center;
+    color: #e0b84c;
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  
+  /* Car Grid */
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .car-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .car-card h3 {
+    font-size: 20px;
+    margin: 15px 0 5px;
+  }
+  
+  .car-card p {
+    color: #e0b84c;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Testimonials */
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .testimonial {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(224, 184, 76, 0.1);
+    font-style: italic;
+  }
+  
+  .testimonial span {
+    display: block;
+    margin-top: 15px;
+    color: #e0b84c;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  /* Contact */
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 15px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .contact button {
+    background-color: #e0b84c;
+    color: #000;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact button:hover {
+    background-color: #c6a538;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #000;
+    padding: 30px 50px;
+    border-top: 1px solid #333;
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .footer-links a {
+    margin-left: 20px;
+    color: #aaa;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #e0b84c;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .hero-content h1 {
+      font-size: 36px;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .footer-links {
+      margin-top: 10px;
+    }
+  }
+  h1{
+    margin: auto;
+  }

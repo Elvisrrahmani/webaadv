@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="player">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">🌑</button>
+
+    <div class="details">
+      <img id="cover" src="images/default.jpg" alt="Album Cover" class="cover-image">
+      <h2 id="title">Loading...</h2>
+      <h3 id="artist">Artist</h3>
+    </div>
+
+    <audio id="audio" preload="metadata"></audio>
+
+    <div class="controls">
+      <button id="shuffle" class="btn" aria-label="Shuffle">🔀</button>
+      <button id="prev" class="btn" aria-label="Previous">⏮️</button>
+      <button id="play" class="btn" aria-label="Play">▶️</button>
+      <button id="next" class="btn" aria-label="Next">⏭️</button>
+      <button id="repeat" class="btn" aria-label="Repeat">🔁</button>
+    </div>
+
+    <div class="progress-area">
+      <span id="current-time">0:00</span>
+      <div class="progress-container" id="progress-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume-container">
+      <input 
+        type="range" 
+        id="volume" 
+        class="volume-slider"
+        min="0" 
+        max="1" 
+        step="0.01" 
+        value="0.5"
+        aria-label="Volume"
+      >
+    </div>
+
+    <div class="playlist" id="playlist"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
