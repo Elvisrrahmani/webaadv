@@ -1,4 +1,3 @@
-
 //for loop
 let text1 = "";
 
@@ -72,7 +71,7 @@ let text6 ="";
 let j = 0;
 
 do{
-    text6 += "The number is "+ j;
+    text6 += "<br> The number is "+ j;
     j++;
 }while(j<10);
 
