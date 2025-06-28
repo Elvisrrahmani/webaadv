@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 29</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form onsubmit="return validation();" method="POST">
+    <div id="name-container">
+   <label for="name" id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <span id="name-error">Please enter a valid name</span>
+    </div>
+
+    <br>
+
+    <div id="age-container">
+   <label for="age" id="age-label">Age:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your age">
+        <span id="age-error">Please enter a valid age</span>
+    </div>
+
+    <br>
+
+    <div id="city-container">
+        <label id="city-label" for="city">City:</label>
+        <select name="City" id="city">
+            <option value="Prishtina">Prishtina</option>
+            <option value="Prizren">Prizren</option>
+            <option value="Gjilan">Gjilan</option>
+            <option value="Ferizaj">Ferizaj</option>
+            <option value="Vushtrri">Vushtrri</option>
+            <option value="Lipjan">Lipjan</option>
+        </select>
+        <span id="city-error">Please select a city</span>
+    </div>
+    <button type="submit" name="submit">Send</button>
+</form>
+
+    <script src="main.js"></script>
+</body>
+</html>
