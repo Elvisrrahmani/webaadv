@@ -1,0 +1,35 @@
+nav{
+    overflow: hidden;
+    background-color: #06206a;
+    position: relative;
+    max-width: 400px;
+}
+
+
+nav #links{
+    display: none;
+}
+
+
+nav a, button{
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+
+nav button.icon{
+    background-color: #06206a;
+    display: block;
+    margin-top: 10px;
+
+
+}
+
+
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
